@@ -1,0 +1,36 @@
+{
+  "name": "docusaurus-plugin-sentry",
+  "version": "1.0.0",
+  "description": "Sentry SDK plugin for Docusaurus",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "author": "Sergio Moreno",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "package.json",
+    "README.md",
+    "lib/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/semoal/docusaurus-plugin-sentry.git"
+  },
+  "private": false,
+  "dependencies": {
+    "@docusaurus/core": "2.0.0-beta.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.4 || ^17.0.0",
+    "react-dom": "^16.8.4 || ^17.0.0"
+  },
+  "engines": {
+    "node": ">=12.13.0"
+  }
+}

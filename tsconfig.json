@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "outDir": "lib",
+    "rootDir": "src",
+    "declaration": true,
+    "target": "ES2019",
+    "module": "commonjs",
+    "lib": ["ESNext", "DOM"],
+
+    /* Additional Checks */
+    "noUnusedLocals": false, // ensured by eslint, should not block compilation
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedParameters": true,
+
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+
+    /* Advanced Options */
+    "resolveJsonModule": true,
+    "skipLibCheck": true, // @types/webpack and webpack/types.d.ts are not the same thing
+
+    /* Use tslib */
+    "importHelpers": true,
+    "noEmitHelpers": true
+  },
+  "include": ["src/"]
+}
