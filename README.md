@@ -5,7 +5,7 @@ Lazy initializes Sentry without performance impact in your Docusaurus website.
 ## Installation
 
 ```bash
-yarn add docusuarus-plugin-sentry
+yarn add docusaurus-plugin-sentry
 ```
 
 ## Configuration
