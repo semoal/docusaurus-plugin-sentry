@@ -46,6 +46,7 @@ export default function pluginSentry(
             attributes: {
               rel: 'preconnect',
               href: 'https://js.sentry-cdn.com',
+              defer: true
             },
           },
           {
@@ -53,6 +54,7 @@ export default function pluginSentry(
             attributes: {
               crossorigin: "anonymous",
               src: `https://js.sentry-cdn.com/${DSN}.min.js`,
+              defer: true
             },
           },
           {
@@ -62,6 +64,9 @@ export default function pluginSentry(
               Sentry.init();
             });
             `,
+            attributes: {
+              defer: true
+            },
           },
         ],
       };
