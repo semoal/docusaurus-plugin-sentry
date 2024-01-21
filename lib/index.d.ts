@@ -1,5 +1,3 @@
 import { LoadContext, Plugin } from '@docusaurus/types';
-export type SentryPluginOpts = {
-    DSN: string;
-};
+import { SentryPluginOpts } from './types/SentryPluginOpts';
 export default function pluginSentry(_: LoadContext, opts: SentryPluginOpts): Plugin<unknown>;
