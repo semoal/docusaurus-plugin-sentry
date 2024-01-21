@@ -10,7 +10,6 @@ export default function pluginSentry(
 ): Plugin<unknown> {
   handleConfigurationErrors(opts)
   const headTags = constructHeadTags(opts)
-  
   return {
     name: 'docusaurus-plugin-sentry',
     injectHtmlTags() {
