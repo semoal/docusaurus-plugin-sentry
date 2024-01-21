@@ -28,6 +28,6 @@ const enrichers = [
     }
 ]
 
-export const constructHeadTags = (opts: SentryPluginOpts): any[] => process.env.NODE_ENV !== 'production' && opts.onlyProduction
+export const constructHeadTags = (opts: SentryPluginOpts): any[] => process.env.NODE_ENV !== 'production' && !opts.allEnvironments
     ? undefined
     : enrichers.map(enricher => enricher.condition(opts)? enricher.generate(opts) : undefined).filter(value => value)
