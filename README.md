@@ -4,8 +4,18 @@ Lazy initializes Sentry without performance impact in your Docusaurus website.
 
 ## Installation
 
+If you're looking for a solution for your **Docusaurus v3** website, please install `latest` version:
 ```bash
-yarn add docusaurus-plugin-sentry
+npm install docusaurus-plugin-sentry@latest
+yarn add docusaurus-plugin-sentry@latest
+pnpm add docusaurus-plugin-sentry@latest
+```
+
+But, if you're looking for a solution for your **Docusaurus v2** website, please install `v1` version:
+```bash
+npm install docusaurus-plugin-sentry@1.1.0
+yarn add docusaurus-plugin-sentry@1.1.0
+pnpm add docusaurus-plugin-sentry@1.1.0
 ```
 
 ## Configuration
