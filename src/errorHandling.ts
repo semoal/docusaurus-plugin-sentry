@@ -8,12 +8,7 @@ const checks = [
     {
         condition: (opts: SentryPluginOpts) =>  !opts.DSN,
         error: "You specified docusaurs-plugin-sentry options but the 'DSN' field was missing."
-    },
-    {
-        condition: (opts: SentryPluginOpts) =>  opts.DSN.includes("http"),
-        error: "Your 'DSN' property is not valid, should be without http|s URL Read more about the correct 'DSN' here: https://docs.sentry.io/platforms/javascript/install/loader/'"
-    },
-
+    }
 ]
 
 export const handleConfigurationErrors = (opts: SentryPluginOpts)=> {
